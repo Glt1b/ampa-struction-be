@@ -1,9 +1,9 @@
 const AWS = require("aws-sdk");
 const fs = require('fs')
 const s3 = new AWS.S3()
-const bucket = 'cyclic-tan-outrageous-ostrich-eu-central-1'
+const bucket = 'cyclic-dull-gold-chiton-gown-eu-west-3'
 
-const image = fs.readFileSync('./photos/3.jpg')
+const image = fs.readFileSync('./plan2.jpeg')
 
 
 
@@ -12,7 +12,7 @@ const storage = async function (){
     console.log(image)
     const uploadedImage = await s3.upload({
         Bucket: bucket,
-        Key: 'marker3',
+        Key: 'project2-second_floor',
         Body: image,
       }).promise()
 /*
@@ -23,7 +23,7 @@ const storage = async function (){
 */
     let my_file = await s3.getObject({
         Bucket: bucket,
-        Key: "marker3",
+        Key: "project2-second_floor",
     }).promise()
 
     //const buffer = Buffer.from(my_file, "base64");

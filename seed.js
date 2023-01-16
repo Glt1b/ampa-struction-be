@@ -1,6 +1,6 @@
-process.env.CYCLIC_DB = 'https://struction-backend.cyclic.app'
+process.env.CYCLIC_DB = 'https://dull-gold-chiton-gown.cyclic.app'
 const CyclicDB = require('@cyclic.sh/dynamodb')
-const db = CyclicDB('tan-outrageous-ostrichCyclicDB')
+const db = CyclicDB('dull-gold-chiton-gownCyclicDB')
 
 run = async function(){
 
@@ -27,9 +27,9 @@ run = async function(){
             "services": ["steel beam", "pipe", "duct", "cable tray", "cable"],
             "locations": [
                 {   "name": "ground floor",
-                    "url": "project1-ground-floor"},
+                    "url": "apartments-ground-floor"},
                 {   "name": "first floor",
-                    "url": "project1-first-floor"}
+                    "url": "apartments-first-floor"}
                 ]
           
     })

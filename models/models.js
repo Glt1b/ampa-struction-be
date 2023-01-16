@@ -1,10 +1,10 @@
 
-process.env.CYCLIC_DB = 'https://struction-backend.cyclic.app'
+process.env.CYCLIC_DB = ' https://dull-gold-chiton-gown.cyclic.app'
 const CyclicDB = require('@cyclic.sh/dynamodb')
-const db = CyclicDB('tan-outrageous-ostrichCyclicDB')
+const db = CyclicDB('dull-gold-chiton-gownCyclicDB')
 const AWS = require("aws-sdk");
 const s3 = new AWS.S3()
-const bucket = 'cyclic-tan-outrageous-ostrich-eu-central-1'
+const bucket = 'cyclic-dull-gold-chiton-gown-eu-west-3'
 
 exports.getUserDynamo = async (username) => {
     let users = db.collection('users');
